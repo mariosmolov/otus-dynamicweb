@@ -1,0 +1,9 @@
+---
+- hosts: server
+  name: setup everything
+  become: yes
+  roles:
+    - role: laravel
+    - role: django
+    - role: react
+
